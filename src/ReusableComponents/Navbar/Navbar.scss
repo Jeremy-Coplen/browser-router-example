@@ -1,0 +1,26 @@
+@import "../../Styles/mixins.scss";
+@import "../../Styles/variables.scss";
+
+.navbar {
+    @include flex(row);
+    width: 100%;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    .nav_link {
+        display: block;
+        width: 100px;
+        text-decoration: none;
+        background-color: $btnPrimaryBackground;
+        height: 35px;
+        padding-top: 10px;
+        border-radius: 6px;
+        &:hover {
+            background-color: $btnPrimaryHover;
+        }
+    }
+    p {
+        width: 100px;
+        color: $white;
+        text-align: center;
+    }
+}
